@@ -10,7 +10,7 @@ function Home() {
         `https://yts.mx/api/v2/list_movies.json?minimum_rating=9.0&sort_by=year`
       )
     ).json();
-
+    console.log(json.data);
     setMovies(json.data.movies);
     setLoading(false);
   };
